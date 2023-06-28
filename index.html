@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Դիրքի  <code>position</code> տարբեր արժեքներ</h1>
+
+    </header>
+      <main>
+        <section>
+          <div class="static">
+            <h2><code style="color: #f05a66; font-weight: 900; font-size: 25px;">position: static</code></h2>
+            <p>Բոլոր վանդակների համար  <code style=" color: #21ed21; font-weight: 900;">position</code>   լռելյայն / default արժեքը: </p>
+            <div class="container">
+              <div class="box"></div>
+              <div class="box positioned"><span>static</span></div>
+              <div class="box"></div>
+            </div>
+          </div>
+      
+          <div class="relative">
+            <h2><code style="color: #f05a66; font-weight: 900; font-size: 25px;">position: relative</code></h2>
+            <p>Տեղադրված (կանաչ) վանդակն ունի վերևի և ձախից՝ 32px օֆսեթ արժեքները, և այդպիսով իր նորմալ դիրքից վերևից և ձախից շեղվում է 2em-ով:</p>
+            <div class="container">
+              <div class="box"></div>
+              <div class="box positioned"><span>relative</span></div>
+              <div class="box"></div>
+            </div>
+          </div>
+      
+          <div class="absolute">
+            <h2><code style="color: #f05a66; font-weight: 900; font-size: 25px;">position: absolute</code></h2>
+            <p>Տեղադրված (կանաչ) վանդակը բացարձակապես տեղադրված է աջ օֆսեթ արժեքով. <code>right: 0</code>։ Սա տուփը մղում է տարայի աջ եզրին, բայց պահպանում է իր ուղղահայաց դիրքը:</p>
+            <div class="container">
+              <div class="box"></div>
+              <div class="box positioned"><span>absolute</span></div>
+              <div class="box"></div>
+            </div>
+          </div>
+      
+          <div class="fixed">
+            <h2><code style="color: #f05a66; font-weight: 900; font-size: 25px;">position: fixed</code></h2>
+            <p>Տեղադրված (կանաչ) վանդակն անում է իր գործը: <code>right: 0</code> and <code>top: 0</code> օֆսեթ արժեքներով այն միշտ կլինի ամբողջ էջի վերևի աջ անկյունում:</p>
+            <div class="container">
+              <div class="box"></div>
+              <div class="box positioned"><span>fixed</span></div>
+              <div class="box"></div>
+            </div>
+          </div>
+        </section>
+      
+        <section>
+          <div class="sticky top">
+            <h2><code style="color: #f05a66; font-weight: 900; font-size: 25px;">position: sticky</code> (top)</h2> 
+            <p>Տեղադրված (կանաչ) տուփն իրեն պահում է համեմատաբար տեղադրված տուփի նման, քանի դեռ դրա պարունակող բլոկը չի պտտվել նորմալ հոսքի <strong> վերևի դիրքը </strong> position “out-of-frame / շրջանակից դուրս”.</p>
+            <p>Այնուհետև վանդակը կպահպանի վերին դիրքը տեսանելի տարածքի համեմատ, քանի որ դրա տակ գտնվող բովանդակությունը ոլորվում է դեպի տեսադաշտ:</p>
+            <div class="container">
+              <div class="box"></div>
+              <div class="box positioned"><span>sticky (top)</span></div>
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+            </div>
+          </div>
+      
+          <div class="sticky bottom">
+            <h2><code style="color: #f05a66; font-weight: 900; font-size: 25px;">position: sticky</code> (bottom)</h2>
+            <p>Տեղադրված (կանաչ) տուփն իրեն պահում է համեմատաբար տեղադրված տուփի նման, քանի դեռ դրա պարունակող բլոկը չի պտտվել նորմալ հոսքի  <strong>ստորին դիրքը</strong> position “out-of-frame / «շրջանակից դուրս»”.</p>
+            <p>Այնուհետև վանդակը կպահպանի ներքևի դիրքը տեսանելի տարածքի համեմատ, քանի որ դրա վերևում գտնվող բովանդակությունը ոլորվում է դեպի տեսադաշտ</p>
+            <div class="container">
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box positioned"><span>sticky (bottom)</span></div>
+              <div class="box"></div>
+            </div>
+          </div>
+      
+          <div class="sticky left">
+            <h2><code style="color: #f05a66; font-weight: 900; font-size: 25px;">position: sticky</code> (left)</h2>
+            <p>Տեղադրված (կանաչ) տուփն իրեն պահում է համեմատաբար տեղադրված տուփի պես, քանի դեռ իր պարունակող բլոկը չի պտտվել նորմալ հոսքի  : <strong>ձախ դիրքում՝</strong> position “out-of-frame” / «շրջանակից դուրս».</p>
+            <p>Այնուհետև վանդակը կպահպանի ձախ դիրքը տեսանելի տարածքի համեմատ, քանի որ աջ կողմի բովանդակությունը դիտվում է:</p>
+            <div class="container">
+              <div class="scroll-wrap">
+                <div class="box"></div>
+                <div class="box positioned"><span>sticky (left)</span></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="sticky right">
+            <h2><code style="color: #f05a66; font-weight: 900; font-size: 25px;">position: sticky</code> (right)</h2>
+            <p>Տեղադրված (կանաչ) տուփն իրեն պահում է համեմատաբար տեղադրված տուփի նման, քանի դեռ դրա պարունակող բլոկը չի պտտվել նորմալ հոսքի  <strong> աջ դիրքում՝</strong> position “out-of-frame” / «շրջանակից դուրս»:.</p>
+            <p>Այնուհետև վանդակը կպահպանի աջ դիրքը տեսանելի տարածքի նկատմամբ, քանի որ դրա ձախ ոլորման բովանդակությունը դիտվում է:</p>
+            <div class="container">
+              <div class="scroll-wrap">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box positioned"><span>sticky (right)</span></div>
+                <div class="box"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <br>
+        <section class="logical-offsets">
+          <!-- <div class="horizontal-tb">
+            <h2><code>Writing-mode: horizontal-rb</code></h2>
+            <p>The logical top of a container uses <code>inset-block-start</code>, while the logical bottom of a container uses <code>inset-block-end</code>. The logical left of a container uses <code>inset-inline-start</code>, while the logical right of a container uses <code>inset-inline-end</code>.</p>
+             <p>The property values in each of the coloured spans reflect what was written in the <a href="https://drafts.csswg.org/css-position/">CSS Positioned Layout Module Level 3</a> as of 23 April 2020.</p> 
+            <div>
+              <div class="logical ltr" >
+                <span class="ib">inset-block-start</span>
+                <span class="ia">inset-block-end</span>
+              </div>
+              <div class="logical ltr">
+                <span class="is">inset-inline-start</span>
+                <span class="ie">inset-inline-end</span>
+              </div>
+              <div class="logical rtl">
+                <span class="ib">inset-block-start</span>
+                <span class="ia">inset-block-end</span>
+              </div>
+              <div class="logical rtl">
+                <span class="is">inset-inline-start</span>
+                <span class="ie">inset-inline-end</span>
+              </div>
+            </div>
+          </div> -->
+      
+          <!-- <div class="vertical-rl">
+            <h2><code>writing-mode: vertical-rl</code></h2>
+            <p>The logical top of a container uses <code>inset-block-start</code>, while the logical bottom of a container uses <code>inset-block-end</code>. The logical left of a container uses <code>inset-inline-start</code>, while the logical right of a container uses <code>inset-inline-end</code>.</p>
+            <p>The property values in each of the coloured spans reflect what was written in the <a href="https://drafts.csswg.org/css-position/">CSS Positioned Layout Module Level 3</a> as of 23 April 2020.</p>
+            <div>
+              <div class="logical ltr">
+                <span class="ib">inset-block-start</span>
+                <span class="ia">inset-block-end</span>
+              </div>
+              <div class="logical ltr">
+                <span class="is">inset-inline-start</span>
+                <span class="ie">inset-inline-end</span>
+              </div>
+              <div class="logical rtl">
+                <span class="ib">inset-block-start</span>
+                <span class="ia">inset-block-end</span>
+              </div>
+              <div class="logical rtl">
+                <span class="is">inset-inline-start</span>
+                <span class="ie">inset-inline-end</span>
+              </div>
+            </div>
+          </div> -->
+      
+          <!-- <div class="vertical-lr">
+            <h2><code>writing-mode: vertical-lr</code></h2>
+            <p>The logical top of a container uses <code>inset-block-start</code>, while the logical bottom of a container uses <code>inset-block-end</code>. The logical left of a container uses <code>inset-inline-start</code>, while the logical right of a container uses <code>inset-inline-end</code>.</p>
+            <p>The property values in each of the coloured spans reflect what was written in the <a href="https://drafts.csswg.org/css-position/">CSS Positioned Layout Module Level 3</a> as of 23 April 2020.</p>
+            <div>
+              <div class="logical ltr">
+                <span class="ib">inset-block-start</span>
+                <span class="ia">inset-block-end</span>
+              </div>
+              <div class="logical ltr">
+                <span class="is">inset-inline-start</span>
+                <span class="ie">inset-inline-end</span>
+              </div>
+              <div class="logical rtl">
+                <span class="ib">inset-block-start</span>
+                <span class="ia">inset-block-end</span>
+              </div>
+              <div class="logical rtl">
+                <span class="is">inset-inline-start</span>
+                <span class="ie">inset-inline-end</span>
+              </div>
+            </div>
+          </div> -->
+        </section>
+      </main>
+</body>
+</html>
